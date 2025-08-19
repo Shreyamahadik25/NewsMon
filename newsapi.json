@@ -1,0 +1,36 @@
+{
+  "status": "ok",
+  "totalResults": 3,
+  "articles": [
+    {
+      "source": { "id": "the-verge", "name": "The Verge" },
+      "author": "Tom Warren",
+      "title": "Here’s what Mac you need for Cyberpunk 2077",
+      "description": "Cyberpunk 2077 is launching on macOS tomorrow...",
+      "url": "https://www.theverge.com/news/708100/cyberpunk-2077-mac-system-requirements-modes-ray-tracing",
+      "urlToImage": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/07/k3cQ7LAZwdisQH25ygxYiT.png?quality=90&strip=all",
+      "publishedAt": "2025-07-16T10:57:47Z",
+      "content": "You’ll need an M3 or newer chip for ray tracing modes..."
+    },
+    {
+      "source": { "id": "the-verge", "name": "The Verge" },
+      "author": "Ash Parrish",
+      "title": "Donkey Kong Bananza turns destruction into joy",
+      "description": "Donkey Kong Bananza is wild fun...",
+      "url": "https://www.theverge.com/games-review/707704/donkey-kong-bananza-review-nintendo-switch-2",
+      "urlToImage": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/07/NS2_DonkeyKongBananza_SCRN_06.png",
+      "publishedAt": "2025-07-16T02:07:14Z",
+      "content": "Bananza turns destruction into joy."
+    },
+    {
+      "source": { "id": null, "name": "BBC News" },
+      "author": null,
+      "title": "Miley Cyrus says she has 'no desire' to go on tour",
+      "description": "Despite \"the physical ability and opportunities to tour\", Miley Cyrus says she doesn't want to.",
+      "url": "https://www.bbc.com/news/articles/cvgwenr7qngo",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/772b/live/023aad70-6224-11f0-8aff-a9b297edee6c.jpg",
+      "publishedAt": "2025-07-16T10:02:19Z",
+      "content": "Miley Cyrus says she has \"no desire\" to go on tour..."
+    }
+  ]
+}
