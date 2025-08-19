@@ -34,7 +34,8 @@ export default class News extends Component {
   fetchNews = async () => {
     this.setState({ loading: true });
 
-    let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&page=${this.state.page}&pageSize=${this.props.pageSize}&apiKey=b22e8846b17c49d29e2c85678fb2b294`;
+    const ApiKey = import.meta.env.VITE_API_KEY;  // ✅ get key from env
+    let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&page=${this.state.page}&pageSize=${this.props.pageSize}&apiKey=${ApiKey}`;
 
     let data = await fetch(url);
     let parsedData = await data.json();
@@ -49,7 +50,9 @@ export default class News extends Component {
 
   fetchMoreData = async () => {
     const nextPage = this.state.page + 1;
-    const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&page=${nextPage}&pageSize=${this.props.pageSize}&apiKey=b22e8846b17c49d29e2c85678fb2b294`;
+
+    const ApiKey = import.meta.env.VITE_API_KEY; // ✅ same here
+    const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&page=${nextPage}&pageSize=${this.props.pageSize}&apiKey=${ApiKey}`;
 
     const data = await fetch(url);
     const parsedData = await data.json();
@@ -65,7 +68,7 @@ export default class News extends Component {
     return (
       <div style={{ overflowX: 'hidden' }}>
         <div className="container-fluid px-3 my-3">
-          <h2 className="text-center" style={{ marginTop:'60px' }}>
+          <h2 className="text-center" style={{ marginTop: '60px' }}>
             NewsMonkey - Top Headlines
           </h2>
 
